@@ -1,42 +1,129 @@
-body {
-	background-color: #F2F2F2;
-	font-family: Arial, sans-serif;
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
 }
-.login {
-	background-color: #FFFFFF;
-	margin: 50px auto;
-	padding: 20px;
-	max-width: 400px;
-	border-radius: 5px;
-	box-shadow: 0px 0px 10px #BBBBBB;
+
+html{
+	color: #333;
+    font-size: 62.5%;
+    font-family: "Open Sans", sans-serif;
 }
-h2 {
+.main{
+	background: #f1f1f1;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.form{
+	width: 360px;
+	min-height: 100px;
+	padding: 32px 24px;
+	border-radius: 6px;
+	background-color: #fff;
 	text-align: center;
-	margin-bottom: 20px;
+	align-self: center;
+	box-shadow: 0 2px 5px 0 rgba(51, 62, 73, 0.1);
+
 }
-form {
-	display: flex;
-	flex-direction: column;
+.heading{
+	font-size: 2rem;
 }
-label {
-	margin-bottom: 5px;
-	font-weight: bold;
+
+.desc{
+	font-size: 1.6rem;
+	margin-top: 16px;
+	font-weight: 300;
+	line-height: 2.4rem;
+	color: #333;
+	text-align: center;
 }
-input[type="email"], input[type="password"] {
-	padding: 10px;
-	margin-bottom: 20px;
-	border: none;
-	border-radius: 5px;
-	background-color: #F2F2F2;
+
+.btn-icon-fb{
+	color: #3b82f6;	
 }
-input[type="submit"] {
-	padding: 10px;
-	border: none;
-	border-radius: 5px;
-	background-color: #4CAF50;
-	color: #FFFFFF;
+.btn-icon-itg{
+	color: #f33a58;
+}
+
+.btn-icon-itg:hover,
+.btn-icon-fb:hover{
+	opacity: 0.8;
+	transition: 0.3s;
 	cursor: pointer;
 }
-input[type="submit"]:hover {
-	background-color: #3E8E41;
+.btn-icon-fb,
+.btn-icon-itg{
+	font-size: 30px;
+	margin-top: 12px;
+	border-radius: 50%;
+	text-align: center;
+	outline: none;
+	border: none;
+	margin-left: 8px;
 }
+
+
+.spacer{
+	margin-bottom: 36px;
+}
+
+.form-group{
+	display: flex;
+	margin-bottom: 16px;
+	flex-direction: column;
+	
+}
+.form--label,
+.form-message{
+	text-align: left;
+}
+
+.form--label{
+	font-size: 1.4rem;
+	font-weight: 600;
+	margin-bottom: 6px;
+
+}
+
+.form-control{
+	height: 40px;
+	outline: none;
+	padding: 8px 12px;
+	border-radius: 3px;
+	border: 1px solid #b3b3b3;
+	font-size: 1.4rem;
+	opacity: 0.8;
+}
+.form-control:hover{
+	border-color: #1dbfaf;
+}
+
+.form-group.invalid .form-control {
+    border-color: #f33a58;
+  }
+  
+  .form-group.invalid .form-message {
+    color: #f33a58;
+  }
+
+  .form-message{
+	font-size: 1.2rem;
+    line-height: 1.6rem;
+    padding: 4px 0 0;
+  }
+
+  .submit{
+	outline: none;
+    background-color: #1dbfaf;
+    margin-top: 12px;
+    padding: 12px 16px;
+    font-weight: 700;
+    color: #fff;
+    border: none;
+    width: 100%;
+    font-size: 14px;
+    border-radius: 8px;
+    cursor: pointer;
+  }
